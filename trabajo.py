@@ -50,8 +50,8 @@ mi_cursor.execute("""
 añadir_datos = [
     ("1","4134-ABAS","15/06/1215 09:25","16/08/2002 19:55","Balvanera",),
     ("2","53453-AGST","20/12/2022 10:30","02/06/2023 11:11","Barracas"),
-    ("3","857_KJDF","04/11/2010 10:50","03/12/2010 11:11","Caballito"),
-    ("4","821_ASKD","10/01/2010 01:43","05/11/2021 20:00","Moreno"),
+    ("3","857-JDF","04/11/2010 10:50","03/12/2010 11:11","Caballito"),
+    ("4","821-SKD","10/01/2010 01:43","05/11/2021 20:00","Moreno"),
 ]
 
 mi_cursor.executemany("INSERT INTO movimientos VALUES (?,?,?,?,?)", añadir_datos)
@@ -77,10 +77,10 @@ mi_cursor.execute("""
 """)
 
 añadir_datos = [
-    ("1", "Luis","Luis01239","luala2", "ADMIN"),
-    ("2", "Armando","Armando3287","afdlskgjh", "USER"),
-    ("3", "Jorge", "JORGE1423","dgajhkl", "ADMIN"),
-    ("4", "Carlos","carlityoxx1342", "fdsgljnh", "USER"),
+    ("1", "Luis","Luis01239","Lis123","ADMIN"),
+    ("2", "Armando","Armando3287","a", "USER"),
+    ("3", "Jorge", "JORGE1423","d", "ADMIN"),
+    ("4", "Carlos","carlityoxx1342", "f", "USER"),
 ]
 
 mi_cursor.executemany("INSERT INTO usuarios VALUES (?,?,?,?,?)", añadir_datos)
